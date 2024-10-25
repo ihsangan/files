@@ -42,10 +42,10 @@ function getMerchInfo(data) {
   let crc = sliceData.slice(crcIndex)
   return {
     name: merchantName,
-    nmid: nmid,
+    nmid,
     postalcode: postalCode,
     city: cityName,
     issuer: issuerName,
-    crc: crc
+    crc
   };
 };
